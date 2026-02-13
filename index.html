@@ -31,15 +31,22 @@
         }
         
         .photo-container {
-            max-width: 1200px;
+            max-width: 100%;
             width: 100%;
+            max-height: calc(100vh - 160px); /* Account for padding and header */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
         img {
-            width: 100%;
+            max-width: 100%;
+            max-height: calc(100vh - 160px);
+            width: auto;
             height: auto;
             display: block;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            object-fit: contain;
         }
     </style>
 </head>
